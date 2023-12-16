@@ -1,5 +1,6 @@
 // C++ code to demonstrate prevention of
 // decay of array
+// Geekforgeek
 #include <iostream>
 using namespace std;
 
