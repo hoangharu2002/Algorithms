@@ -2,7 +2,8 @@
 using namespace std;
 
 int main(){
-    cout << true << " or " << false;    //without boolalpha
+    cout << true << " or " << false;    // without boolalpha
     cout << boolalpha << true << " or " << false;
+    cout << noboolalpha << true << " or " << false; // disable boolalpha
     return 0;
 }
