@@ -1,0 +1,8 @@
+#include <iostream>
+using namespace std;
+
+int main(){
+    cout << true << " or " << false;    //without boolalpha
+    cout << boolalpha << true << " or " << false;
+    return 0;
+}
