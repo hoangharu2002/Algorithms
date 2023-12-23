@@ -50,3 +50,11 @@ unsigned int fact3(unsigned int n)
     return n * fact3(n - 1);
 }
 
+// ver 4: using loop
+unsigned int fact4(unsigned int n)
+{
+    unsigned int f = 1;
+    while (n > 1)
+        f *= n--;
+    return f;
+}
