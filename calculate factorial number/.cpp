@@ -4,6 +4,7 @@ unsigned int fact(unsigned int);
 unsigned int fact1(unsigned int, unsigned int = 1);
 unsigned int fact2(unsigned int, unsigned int = 1);
 unsigned int fact3(unsigned int);
+unsigned int fact4(unsigned int);
 
 int main()
 {
@@ -46,6 +47,6 @@ unsigned int fact3(unsigned int n)
 {
     if (n <= 1)
         return 1;
-    return n * fact2(n - 1);
+    return n * fact3(n - 1);
 }
 
