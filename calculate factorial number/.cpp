@@ -40,3 +40,11 @@ unsigned int fact2(unsigned int n, unsigned int f)
 
     return fact1(n - 1, f * n);
 }
+
+// ver 3: non-tail recursive
+unsigned int fact3(unsigned n)
+{
+    if (n <= 1)
+        return 1;
+    return n * fact2(n - 1);
+}
