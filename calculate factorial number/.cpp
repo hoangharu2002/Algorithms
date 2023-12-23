@@ -39,7 +39,7 @@ unsigned int fact2(unsigned int n, unsigned int f)
     if (n <= 1)
         return f;
 
-    return fact1(n - 1, f * n);
+    return fact2(n - 1, f * n);
 }
 
 // ver 3: non-tail recursive
