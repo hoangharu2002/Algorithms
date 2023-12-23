@@ -2,7 +2,8 @@
 
 unsigned int fact(unsigned int);
 unsigned int fact1(unsigned int, unsigned int = 1);
-unsigned int fact2(unsigned int);
+unsigned int fact2(unsigned int, unsigned int = 1);
+unsigned int fact3(unsigned int);
 
 int main()
 {
@@ -32,7 +33,7 @@ start:
 }
 
 // ver 2: tail recursive non-optimized
-unsigned int fact1(unsigned int n, unsigned int f)
+unsigned int fact2(unsigned int n, unsigned int f)
 {
     if (n <= 1)
         return f;
