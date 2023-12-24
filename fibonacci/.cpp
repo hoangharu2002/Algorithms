@@ -21,14 +21,16 @@ unsigned int fibo(unsigned int n)
 unsigned int fibo1(unsigned int n)
 {
     unsigned int num1 = 0, num2 = 1;
-    if (n == 0)
-        return num1;
-    if (n == 1)
-        return num2;
     while (n-- > 2)
     {
         num2 = num1 + num2;
         num1 = num2 - num1;
     }
+    if (n == 0)
+        return num1;
+    if (n == 1)
+        return num2;
     return num2;
 }
+
+// ver 2: another version of using name loop without using array
