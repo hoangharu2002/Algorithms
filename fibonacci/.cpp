@@ -1,14 +1,18 @@
-// imagine I have a fibonacci seri and my job is to find out the k-th fibo number
 #include <iostream>
+
+unsigned int *fi = new unsigned int[100];
 
 unsigned int fibo(unsigned int);
 unsigned int fibo1(unsigned int);
+unsigned int fibo2(unsigned int);
+unsigned int fibo3(unsigned int);
 
 int main()
 {
     int n;
     std::cin >> n;
     std::cout << "So fibo tai vi tri thu " << n << " la: " << fibo(n);
+    delete[] fi;
     return 0;
 }
 
@@ -18,19 +22,18 @@ unsigned int fibo(unsigned int n)
 }
 
 // ver 1: using loop without using array
+
 unsigned int fibo1(unsigned int n)
 {
-    unsigned int num1 = 0, num2 = 1;
-    while (n-- > 2)
+
+    unsigned int num1 = 1, num2 = 0;
+
+    while (n > 1)
     {
         num2 = num1 + num2;
         num1 = num2 - num1;
+        --n;
     }
-    if (n == 0)
-        return num1;
-    if (n == 1)
-        return num2;
+
     return num2;
 }
-
-// ver 2: another version of using name loop without using array
