@@ -1,6 +1,6 @@
 #include <iostream>
 
-unsigned int *fi = new unsigned int[100];
+unsigned int *fi = new unsigned int[100];       //extra array
 
 unsigned int fibo(unsigned int);
 unsigned int fibo1(unsigned int);
