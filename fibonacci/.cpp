@@ -39,6 +39,7 @@ unsigned int fibo1(unsigned int n)
 }
 
 // ver 2: using loop without using array
+
 unsigned int fibo2(unsigned int n)
 {
     fi[0] = 0;
@@ -48,6 +49,6 @@ unsigned int fibo2(unsigned int n)
     {
         fi[i] = fi[i - 1] + fi[i - 2];
     }
-    
+
     return fi[n - 1];
 }
