@@ -52,3 +52,13 @@ unsigned int fibo2(unsigned int n)
 
     return fi[n - 1];
 }
+
+// ver 3: using recursion without extra memory
+
+unsigned int fibo3(unsigned int n)
+{
+    if (n < 3)
+        return n - 1;
+
+    return fibo3(n - 1) + fibo3(n - 2);
+}
