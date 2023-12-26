@@ -62,3 +62,18 @@ unsigned int fibo3(unsigned int n)
 
     return fibo3(n - 1) + fibo3(n - 2);
 }
+
+// ver 4: upgrade recursion with extra memory
+
+unsigned int fibo4(unsigned int n)
+{
+    if (fi[n] > -1)
+        return fi[n - 1];
+    if (n < 3)
+    {
+        fi[n - 1] = n - 1;
+    }
+    else
+        fi[n - 1] = fibo4(n - 1) + fibo4(n - 2);
+    return fi[n - 1];
+}
