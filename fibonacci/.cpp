@@ -6,6 +6,7 @@ unsigned int fibo(unsigned int);
 unsigned int fibo1(unsigned int);
 unsigned int fibo2(unsigned int);
 unsigned int fibo3(unsigned int);
+unsigned int fibo4(unsigned int);
 
 int main()
 {
@@ -76,6 +77,6 @@ unsigned int fibo4(unsigned int n)
     }
     else
         fi[n - 1] = fibo4(n - 1) + fibo4(n - 2);
-        
+
     return fi[n - 1];
 }
