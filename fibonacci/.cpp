@@ -68,9 +68,11 @@ unsigned int fibo3(unsigned int n)
 
 unsigned int fibo4(unsigned int n)
 {
+    // if available
     if (fi[n] > -1)
         return fi[n - 1];
 
+    // if not available
     if (n < 3)
     {
         fi[n - 1] = n - 1;
