@@ -24,6 +24,7 @@ unsigned int fact(unsigned int n)
 unsigned int fact1(unsigned int n, unsigned int f)
 {
 start:
+    // stop condition
     if (n <= 1)
         return f;
 
@@ -36,6 +37,7 @@ start:
 // ver 2: tail recursive non-optimized
 unsigned int fact2(unsigned int n, unsigned int f)
 {
+    // stop condition
     if (n <= 1)
         return f;
 
@@ -45,16 +47,20 @@ unsigned int fact2(unsigned int n, unsigned int f)
 // ver 3: non-tail recursive
 unsigned int fact3(unsigned int n)
 {
+    // stop condition
     if (n <= 1)
         return 1;
+
     return n * fact3(n - 1);
 }
 
 // ver 4: using loop
 unsigned int fact4(unsigned int n)
 {
-    unsigned int f = 1;
+    unsigned int result = 1;
+
     while (n > 1)
-        f *= n--;
-    return f;
+        result *= n--;
+
+    return result;
 }
