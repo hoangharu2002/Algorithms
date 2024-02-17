@@ -1,3 +1,3 @@
 # algorithms
 
-My colection of algorithms
+My collection of algorithms
