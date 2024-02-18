@@ -29,7 +29,7 @@ unsigned int fibo1(unsigned int n)
 
     unsigned int num1 = 1, num2 = 0;
 
-    while (n > 1)
+    while (n > 0)
     {
         num2 = num1 + num2;
         num1 = num2 - num1;
